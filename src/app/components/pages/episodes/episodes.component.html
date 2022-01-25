@@ -1,0 +1,8 @@
+<section class="container-fluid">
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center"
+        *ngFor="let episode of episodes$ | async ">
+      {{ episode.episode}} - {{episode.name}}
+    </li>
+  </ul>
+</section>

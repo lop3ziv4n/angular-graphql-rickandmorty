@@ -1,0 +1,29 @@
+<app-character-search></app-character-search>
+<section infiniteScroll (scrolled)="onScrollDown()">
+  <ng-container *ngIf="characters$ | async as characters; else showEmpty">
+    <div class="card mt-3" *ngFor="let character of characters">
+      <a [routerLink]="['/character', character.id]">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{{character.image}}" class="img-thumbnail rounded-start" alt="image">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{character.name}}</h5>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </ng-container>
+  <ng-template #showEmpty>
+    <div>
+      <h1 class="title">Not results</h1>
+    </div>
+  </ng-template>
+  <div class="position-fixed bottom-0 end-0">
+    <button *ngIf="showButton" (click)="onScrollTop()" type="button" class="btn btn-primary">
+      <i class="bi bi-caret-up"></i> ️
+    </button>
+  </div>
+</section>

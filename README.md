@@ -1,4 +1,4 @@
-# AngularGraphqlRickandmorty
+# Angular Graphql Rick and Morty
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.18.
 
@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Reference
+[GraphQL](https://graphql.org/learn/)
+
+[API](https://rickandmortyapi.com/graphql)
+
+## Command
+- ng new angular-graphql-rickandmorty
+- ng add apollo-angular
+- npm install bootstrap
+- npm i bootstrap-icons
+- npm install ngx-infinite-scroll --save
+- ng g m shared/components/header
+- ng g c shared/components/header
+- ng g m components/pages/episodes/episodes -m=app --route episodes --flat
+- ng g m components/pages/character-card
+- ng g c components/pages/character-card
+- ng g m components/pages/characters/characters -m=app --route characters --flat
+- ng g m components/pages/character/character -m=app --route character --flat
+- ng g m components/pages/character-search
+- ng g c components/pages/character-search

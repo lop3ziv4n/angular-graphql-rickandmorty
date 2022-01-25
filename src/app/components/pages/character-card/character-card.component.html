@@ -1,0 +1,21 @@
+<div class="card text-dark bg-light mt-3" style="max-width: 50rem;">
+  <img class="card-img-top" rel="preload" is="image" width="400" height="350" [src]="character?.image"
+       [alt]="character?.name"/>
+  <div class="card-body">
+    <h3 class="card-title">{{character?.name}}</h3>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <label>Status: </label> <h5>{{character?.status}}</h5>
+    </li>
+    <li class="list-group-item">
+      <label>Species: </label><h5>{{character?.species}}</h5>
+    </li>
+    <li class="list-group-item">
+      <label>Gender: </label><h5>{{character?.gender}}</h5>
+    </li>
+    <li class="list-group-item">
+      <label>Type: </label><h5>{{character?.type}}</h5>
+    </li>
+  </ul>
+</div>

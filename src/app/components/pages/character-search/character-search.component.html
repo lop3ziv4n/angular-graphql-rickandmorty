@@ -1,0 +1,14 @@
+<section>
+  <div class="row pt-3">
+    <div class="col-md-10">
+      <div class="form-floating">
+        <input type="text" class="form-control"
+               id="floatingInput" placeholder="Search by name..." [formControl]="search">
+        <label for="floatingInput">Search by name</label>
+      </div>
+    </div>
+    <div class="col-md">
+      <button type="button" class="btn btn-outline-secondary btn-lg" (click)="onClear()">Clear</button>
+    </div>
+  </div>
+</section>
